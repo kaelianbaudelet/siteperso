@@ -40,5 +40,8 @@
     "vue": "^3.4.0",
     "vue-email": "^0.8.5",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.8"
   }
 }

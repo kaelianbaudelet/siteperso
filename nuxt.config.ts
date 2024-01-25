@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/image', 'nuxt-security', '@nuxtjs/i18n', 'nuxt-link-checker', '@nuxtjs/robots', 'nuxt-meilisearch', '@zadigetvoltaire/nuxt-gtm', 'nuxt-gtag', 'nuxt-simple-sitemap'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/image', 'nuxt-security', '@nuxtjs/i18n', 'nuxt-link-checker', '@nuxtjs/robots', 'nuxt-meilisearch', '@zadigetvoltaire/nuxt-gtm', 'nuxt-gtag', 'nuxt-simple-sitemap', 'nuxt-vercel-analytics'],
   gtag: {
     id: 'G-C5S8Z84M8Q',
     initialConsent: true,
