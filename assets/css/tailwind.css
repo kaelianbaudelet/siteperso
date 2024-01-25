@@ -1,0 +1,143 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #22272d00;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0ea5e9;
+  border-radius: 20px;
+  border: 3px solid #22272d00;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0ea5e9 #22272d00;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #22272d00;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0ea5e9;
+  border-radius: 20px;
+  border: 3px solid #22272d00;
+}
+
+.shine {
+  --shine-deg: 45deg;
+  position: relative;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-position: -100% 0, 0 0;
+
+  background-image: linear-gradient(
+    var(--shine-deg),
+    transparent 20%,
+    transparent 40%,
+    rgb(68, 68, 68, 0.2) 50%,
+    rgb(68, 68, 68, 0.2) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+
+  background-size: 250% 250%, 100% 100%;
+  transition: background-position 0s ease;
+}
+
+.shine:hover {
+  background-position: 200%0, 0 0;
+  transition-duration: 1.5s;
+}
+
+.prose :where(code):not(:where([class~="not-prose"] *))::before {
+  content: "";
+}
+.prose :where(code):not(:where([class~="not-prose"] *))::after {
+  content: "";
+}
+
+/* Lexend */
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('../fonts/Lexend-Black.ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('../fonts/Lexend-ExtraBold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-Thin.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-ExtraLight.ttf');
+    font-weight: 100;
+}
+
+*, html {
+  scroll-behavior: auto;
+}
+
+[contenteditable="true"]:focus {
+  outline: none;
+}
+
+ .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+} 
