@@ -8,7 +8,7 @@
             <div class="relative flex items-center w-full">
                <a class="flex-none text-slate-900 dark:text-white" href="/">
                <span class="sr-only">Kaelian</span>
-               <NuxtImg class="w-10 h-10 rounded-full shadow-xl bg-steel-50/20 dark:bg-steel-300" src="WBfbdMq4P8RlyMvhkelLaqWBfbdMq4P8RlyMvhkelLaqot5i712HRcQZsWBfbdMq4P8RlyMvhkelLaqot5i712HRcQZsot5i712HRcQZs" alt="Kaelian"/>
+               <NuxtImg class="w-10 h-10 rounded-full shadow-xl bg-steel-50/20 dark:bg-steel-300" src="https://res.cloudinary.com/dmv6znzkv/image/upload/f_auto,q_auto/WBfbdMq4P8RlyMvhkelLaqWBfbdMq4P8RlyMvhkelLaqot5i712HRcQZsWBfbdMq4P8RlyMvhkelLaqot5i712HRcQZsot5i712HRcQZs" alt="Kaelian"/>
                </a>
                <div class="hidden ml-auto text-sm md:flex md:items-center dark:text-white">
                   <NuxtLink :class="{'font-medium text-sky-500': $route.path === '/', 'font-medium hover:text-sky-500 ': $route.fullPath !== '/'}" to="/">Acceuil</NuxtLink>
